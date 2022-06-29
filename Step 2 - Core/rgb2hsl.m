@@ -20,6 +20,6 @@ function [Hue,Sat,Lum]=rgb2hsl(Stk)
         H2=mod(HSV(:,:,1)+.5,1);
         f=HSV(:,:,1)>=.25 & H1<=.75;
         Hue(:,:,1,iz)=uint8(255*(H1.*f+(1-f).*mod(H2+.5,1)));
-    end
+        end
 
 end
