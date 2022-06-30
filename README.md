@@ -17,7 +17,7 @@ For each program, there is a README.md to give specific requirements if any
 
 ## references
 
-- DICHisto has been published in ..., ***TO BE UPDATED***
+- DICHisto has been published in ..., ***Paper in submission, TO BE UPDATED***
 
 - The Matlab parts (Step 1 & 4) are using :
   - bfopen and bfsave functions provided by OME-Bioformats (https://www.openmicroscopy.org/bio-formats/)
