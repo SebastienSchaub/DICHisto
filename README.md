@@ -2,27 +2,18 @@
 
 ## Goal
 
-The program helps to adapt white balance between images to get homogeneous gallery. It uses the ActionBar from J.Mutterer 
+This set of program let to extract quantitatively multiple histology (pigment) staining from gonad nuclei. The set is in 4 distinct steps which can be adapted indpendently according the needs.
 
+Here are the function per step :
+
+- ***RGBCam (Metamorph) :*** let to acquired RGB image from a monochromatic camera installed on an epifluorescence microscope.
+- ***Core (Matlab) :*** let extract histology colored staining to a signal *"Fluorescence-like"* . The program let to distinguish double staining (possibly up to three).
+- ***INC2.0 : Interactive Nuclear Contour (ImageJ) :*** a set of ImageJ macros that is designed for interactive whiteboard. The experimenter could draw quickly all nuclei of the godad (a second category has been defined for indiscernible nuclei). Then the program quantifies the statistics per image including the area of +/- KTS per nucleus and in the cytoplasms.
+- ***CreateStat (Matlab) :*** : summarizing process to regroup results per nucleus and provide statistical results
+ 
 ## How to use
 
-For simplicity the program and icon images are incorporated in the directory of ImageJ. Unzip the file and copy them in the Fiji folder. No file will be overwritten except action_bar_jar if you already have.
-
-Then run the program in [Home Directory]\macros\MICA\PlancheHisto.ijm.
-
-## How to use:
-the file *PlancheHisto Manual.pdf* gives more details how to use
-
-### Shortcuts :
-<li>[1] : Open. Open an image, if necessary, convert in 3 composite channels</li>
-<li>[2] : Reset. Reset each channel to max intensity</li>
-<li>[3] : Copy. Copy the relative intensity of (modal/mean) in the range of min& max contrast. if no selection it get the modal gray, if selection it get the mean gray value</li>
-<li>[4] : WhitBal. Get the white balance of the relative intensity of (modal/mean) to get each channel at 80% (OptimLum can be adapted) of white. if no selection it get the modal gray, if selection it get the mean gray value</li>
-<li>[5] : Paste. Adapt min&max contrast to get the same relative intensity of (modal/mean) per channel</li>
-<li>[6] : Apply. Apply the same transformation as necessary for WhitBal. Useful when a reference image is taken in same conditions.</li>
-<li>[7] : Scale. Show or hide scale bar.</li>
-<li>[8] : Export. Save and RGB image in the same folder as original one withe the extension "WB.tif". The Scale bar is removed before saving.</li>
-<li>[0] : Parameter. Let tune the OptimLum paramameter and to scale the image.</li>
+For each program, there is a README.md to give specific requirements if any
 
 ## references
 
@@ -34,4 +25,6 @@ the file *PlancheHisto Manual.pdf* gives more details how to use
   - ActionBar from J.Mutterer. for details, see: https://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:action_bar:start#installation
 
 - for information contact sebastien.schaub@imev-mer.fr
+
+- This set of program are 
 
