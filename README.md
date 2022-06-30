@@ -26,10 +26,12 @@ the file *PlancheHisto Manual.pdf* gives more details how to use
 
 ## references
 
-- here is a video to introduce it : https://twitter.com/i/status/1409864168749027329
+- The Matlab parts (Step 1 & 4) are using :
+  - bfopen and bfsave functions provided by OME-Bioformats (https://www.openmicroscopy.org/bio-formats/)
+  - loadtiff from Yoon-Oh Tak. (https://www.mathworks.com/matlabcentral/fileexchange/35684-multipage-tiff-stack)
 
-- for details about ActionBar, see:
-https://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:action_bar:start#installation
+- Interactive Nuclear Contour is using :
+  - ActionBar from J.Mutterer. for details, see: https://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:action_bar:start#installation
 
 - for information contact sebastien.schaub@imev-mer.fr
 
