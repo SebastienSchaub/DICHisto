@@ -1,0 +1,93 @@
+// Action Bar description file :INC_v1r0
+//run("Action Bar","/plugins/ActionBar/INC_v1r0.txt");
+exit;
+
+<sticky>
+<onTop>
+<startupAction>
+//print ("action bar started");
+  setTool("freehand");
+  run("All in Front");
+  run("Import Image [i]");
+  
+</startupAction>
+
+<line>
+<button> 1 line 1
+label=Import [I]
+icon=INC_v1_0/Import.png
+arg=<macro>
+run("Import Image [i]");
+</macro>
+</line>
+
+<line>
+<button> 1 line 2
+label=Zoom [Z]
+icon=INC_v1_0/Zoom.png
+arg=<macro>
+run("Action Bar","/plugins/ActionBar/INC_Zoom_v1r0.txt");
+</macro>
+</line>
+
+<line>
+<button> 1 line 3
+label=Select [S]
+icon=INC_v1_0/Select.png
+arg=<macro>
+setTool("freehand");
+run("Select [s]");
+</macro>
+</line>
+
+<line>
+<button> 1 line 4
+label=Navigate [N]
+icon=INC_v1_0/Navigate.png
+arg=<macro>
+setMetadata("Label", "Navigating...");
+setTool("hand");
+</macro>
+</line>
+
+<line>
+<button> 1 line 5
+label=ROI
+icon=INC_v1_0/ROI.png
+arg=<macro>
+run("Action Bar","/plugins/ActionBar/INC_ROI_v1r0.txt");
+</macro>
+</line>
+
+<line>
+<button> 1 line 7
+label=Analyze [A]
+icon=INC_v1_0/Analyze.png
+arg=<macro>
+run("Analyze [A]");
+</macro>
+</line>
+
+<line>
+<button> 1 line 8
+label=Snapshot
+icon=INC_v1_0/Snap.png
+arg=<macro>
+run("Snapshot");
+</macro>
+</line>
+
+<line>
+<button> 1 line 9
+label=Quit [Q]
+icon=INC_v1_0/Quit.png
+arg=<macro>
+run("Quit INC [q]");
+</macro>
+</line>
+
+
+// end of file
+
+
+
