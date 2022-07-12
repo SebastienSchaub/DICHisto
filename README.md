@@ -17,7 +17,7 @@ For each program, there is a README.md to give specific requirements if any
 
 ## references
 
-- DICHisto has been published in ..., ***Paper in submission, TO BE UPDATED***
+- DICHisto has been published in ..., ***Paper under submission, TO BE UPDATED***
 
 - The Matlab parts (Step 1 & 4) are using :
   - bfopen and bfsave functions provided by OME-Bioformats (https://www.openmicroscopy.org/bio-formats/)
@@ -27,6 +27,3 @@ For each program, there is a README.md to give specific requirements if any
   - ActionBar from J.Mutterer. for details, see: https://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:action_bar:start#installation
 
 - for information contact sebastien.schaub@imev-mer.fr
-
-- This set of program are 
-
